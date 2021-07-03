@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Game\Game.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Image\Image.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\DInput.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\XInput.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyRandom\MyRandom.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector2\Vector2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Player\Player.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MyMemory\MyMemory.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\TitleScene\TitleScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\PlayScene\PlayScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\GameOverScene\GameOverScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\PlayerNormalBullet.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Player\Weapons\PlayerNormalBulletCreator\PlayerNormalBulletCreator.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Drawer\PlayerNormalBulletDrawer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\PlayerScatterBullet.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Drawer\PlayerScatterBulletDrawer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Player\Weapons\PlayerScatterBulletCreator\PlayerScatterBulletCreator.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Enemy\Enemy.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Enemy\Drawer\EnemyDrawer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\EnemySpawner\EnemySpawner.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\EnemyBullet\EnemyBullet.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\EnemyBullet\Drawer\EnemyBulletDrawer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Enemy\BulletCreator\EnemyBulletCreator.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UI\Button\Button.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input\MouseInput.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Boss\Boss.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UI\ProgressBar\ProgressBar.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\ClearScene\ClearScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SE\SE.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Game\Game.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameManager\GameManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Image\Image.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Image\ImageID.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\DInput.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\XInput.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyRandom\MyRandom.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyTimer\MyTimer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Scene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SceneID.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screen\Screen.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Singleton\Singleton.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector2\Vector2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Player\Player.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyMemory\MyMemory.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\TitleScene\TitleScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\PlayScene\PlayScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\GameOverScene\GameOverScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\PlayerNormalBullet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Player\Weapons\PlayerWeapon.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Player\Weapons\PlayerNormalBulletCreator\PlayerNormalBulletCreator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Drawer\PlayerNormalBulletDrawer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Updater\PlayerNormalBulletUpdater.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Updater\PlayerNormalBulletUpdaterKernel.cuh" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\PlayerScatterBullet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Drawer\PlayerScatterBulletDrawer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Updater\PlayerScatterBulletUpdaterKernel.cuh" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Updater\PlayerScatterBulletUpdater.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Player\Weapons\PlayerScatterBulletCreator\PlayerScatterBulletCreator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Enemy\Enemy.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Enemy\EnemyKind.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Enemy\Drawer\EnemyDrawer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Enemy\Updater\EnemyUpdaterKernel.cuh" />
+    <ClInclude Include="src\GameObjects\Enemy\Updater\EnemyUpdater.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\EnemySpawner\EnemySpawner.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\EnemyBullet\EnemyBullet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\EnemyBullet\Drawer\EnemyBulletDrawer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\EnemyBullet\Updater\EnemyBulletUpdaterKernel.cuh" />
+    <ClInclude Include="src\GameObjects\EnemyBullet\Updater\EnemyBulletUpdater.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Enemy\BulletCreator\EnemyBulletCreator.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MyMath\MyMath.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Enemy\CollisionDetection\EnemyCollisionDetection.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Enemy\CollisionDetection\EnemyCollisionDetectionKernel.cuh" />
+    <ClInclude Include="src\UI\UI.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Button\Button.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\MouseInput.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObjects\Boss\Boss.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\ProgressBar\ProgressBar.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\ClearScene\ClearScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SE\SE.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SE\SEID.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Updater\PlayerNormalBulletUpdater.cu" />
+    <CudaCompile Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Updater\PlayerNormalBulletUpdaterKernel.cu" />
+    <CudaCompile Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Updater\PlayerScatterBulletUpdaterKernel.cu" />
+    <CudaCompile Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Updater\PlayerScatterBulletUpdater.cu" />
+    <CudaCompile Include="src\GameObjects\Enemy\Updater\EnemyUpdaterKernel.cu" />
+    <CudaCompile Include="src\GameObjects\Enemy\Updater\EnemyUpdater.cu" />
+    <CudaCompile Include="src\GameObjects\EnemyBullet\Updater\EnemyBulletUpdaterKernel.cu" />
+    <CudaCompile Include="src\GameObjects\EnemyBullet\Updater\EnemyBulletUpdater.cu" />
+    <CudaCompile Include="src\GameObjects\Enemy\CollisionDetection\EnemyCollisionDetectionKernel.cu" />
+    <CudaCompile Include="src\GameObjects\Enemy\CollisionDetection\EnemyCollisionDetection.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Image\enemy_bullet_16.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Image\bg.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Image\gameclear.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Image\gameover.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Image\title_text.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Image\player.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Image\player_normal_bullet.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Image\player_scatter_bullet.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="res\Image\boss.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\SE\boss_dead.mp3" />
+    <Media Include="res\SE\clear.mp3" />
+    <Media Include="res\SE\enemy_dead.mp3" />
+    <Media Include="res\SE\gameover.mp3" />
+    <Media Include="res\SE\normal_bullet_fire.mp3" />
+    <Media Include="res\SE\scatter_bullet_fire.mp3" />
+    <Media Include="res\SE\start.mp3" />
+    <Media Include="res\SE\damaged.mp3" />
+    <Media Include="res\BGM\battle1_bgm.mp3" />
+    <Media Include="res\BGM\battle2_bgm.mp3" />
+    <Media Include="res\BGM\battle3_bgm.mp3" />
+    <Media Include="res\BGM\boss_bgm.mp3" />
+    <Media Include="res\BGM\clear_bgm.mp3" />
+    <Media Include="res\BGM\gameover_bgm.mp3" />
+    <Media Include="res\BGM\title_bgm.mp3" />
+  </ItemGroup>
+</Project>

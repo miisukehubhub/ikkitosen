@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4dea3797-f92a-4eed-834d-6fd1feeb3bce}</ProjectGuid>
+    <RootNamespace>ShootingCCUDA</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.2.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cudart.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cudart.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cudart.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cudart.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\GameObjects\Boss\Boss.cpp" />
+    <ClCompile Include="src\GameObjects\EnemyBullet\Drawer\EnemyBulletDrawer.cpp" />
+    <ClCompile Include="src\GameObjects\EnemyBullet\EnemyBullet.cpp" />
+    <ClCompile Include="src\GameObjects\EnemySpawner\EnemySpawner.cpp" />
+    <ClCompile Include="src\GameObjects\Enemy\BulletCreator\EnemyBulletCreator.cpp" />
+    <ClCompile Include="src\GameObjects\Enemy\Drawer\EnemyDrawer.cpp" />
+    <ClCompile Include="src\GameObjects\Enemy\Enemy.cpp" />
+    <ClCompile Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Drawer\PlayerNormalBulletDrawer.cpp" />
+    <ClCompile Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\PlayerNormalBullet.cpp" />
+    <ClCompile Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Drawer\PlayerScatterBulletDrawer.cpp" />
+    <ClCompile Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\PlayerScatterBullet.cpp" />
+    <ClCompile Include="src\GameObjects\Player\Player.cpp" />
+    <ClCompile Include="src\GameObjects\Player\Weapons\PlayerNormalBulletCreator\PlayerNormalBulletCreator.cpp" />
+    <ClCompile Include="src\GameObjects\Player\Weapons\PlayerScatterBulletCreator\PlayerScatterBulletCreator.cpp" />
+    <ClCompile Include="src\Game\Game.cpp" />
+    <ClCompile Include="src\Image\Image.cpp" />
+    <ClCompile Include="src\Input\DInput.cpp" />
+    <ClCompile Include="src\Input\MouseInput.cpp" />
+    <ClCompile Include="src\Input\XInput.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MyMemory\MyMemory.cpp" />
+    <ClCompile Include="src\MyRandom\MyRandom.cpp" />
+    <ClCompile Include="src\Scene\ClearScene\ClearScene.cpp" />
+    <ClCompile Include="src\Scene\GameOverScene\GameOverScene.cpp" />
+    <ClCompile Include="src\Scene\PlayScene\PlayScene.cpp" />
+    <ClCompile Include="src\Scene\TitleScene\TitleScene.cpp" />
+    <ClCompile Include="src\SE\SE.cpp" />
+    <ClCompile Include="src\UI\Button\Button.cpp" />
+    <ClCompile Include="src\UI\ProgressBar\ProgressBar.cpp" />
+    <ClCompile Include="src\Vector2\Vector2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\GameManager\GameManager.h" />
+    <ClInclude Include="src\GameObjects\Boss\Boss.h" />
+    <ClInclude Include="src\GameObjects\EnemyBullet\Drawer\EnemyBulletDrawer.h" />
+    <ClInclude Include="src\GameObjects\EnemyBullet\EnemyBullet.h" />
+    <ClInclude Include="src\GameObjects\EnemyBullet\Updater\EnemyBulletUpdater.h" />
+    <ClInclude Include="src\GameObjects\EnemyBullet\Updater\EnemyBulletUpdaterKernel.cuh" />
+    <ClInclude Include="src\GameObjects\EnemySpawner\EnemySpawner.h" />
+    <ClInclude Include="src\GameObjects\Enemy\BulletCreator\EnemyBulletCreator.h" />
+    <ClInclude Include="src\GameObjects\Enemy\CollisionDetection\EnemyCollisionDetectionKernel.cuh" />
+    <ClInclude Include="src\GameObjects\Enemy\Drawer\EnemyDrawer.h" />
+    <ClInclude Include="src\GameObjects\Enemy\Enemy.h" />
+    <ClInclude Include="src\GameObjects\Enemy\EnemyKind.h" />
+    <ClInclude Include="src\GameObjects\Enemy\CollisionDetection\EnemyCollisionDetection.h" />
+    <ClInclude Include="src\GameObjects\Enemy\Updater\EnemyUpdater.h" />
+    <ClInclude Include="src\GameObjects\Enemy\Updater\EnemyUpdaterKernel.cuh" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Drawer\PlayerNormalBulletDrawer.h" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\PlayerNormalBullet.h" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Updater\PlayerNormalBulletUpdaterKernel.cuh" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Updater\PlayerNormalBulletUpdater.h" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Drawer\PlayerScatterBulletDrawer.h" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\PlayerScatterBullet.h" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Updater\PlayerScatterBulletUpdater.h" />
+    <ClInclude Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Updater\PlayerScatterBulletUpdaterKernel.cuh" />
+    <ClInclude Include="src\GameObjects\Player\Player.h" />
+    <ClInclude Include="src\GameObjects\Player\Weapons\PlayerNormalBulletCreator\PlayerNormalBulletCreator.h" />
+    <ClInclude Include="src\GameObjects\Player\Weapons\PlayerScatterBulletCreator\PlayerScatterBulletCreator.h" />
+    <ClInclude Include="src\GameObjects\Player\Weapons\PlayerWeapon.h" />
+    <ClInclude Include="src\Game\Game.h" />
+    <ClInclude Include="src\Image\Image.h" />
+    <ClInclude Include="src\Image\ImageID.h" />
+    <ClInclude Include="src\Input\DInput.h" />
+    <ClInclude Include="src\Input\MouseInput.h" />
+    <ClInclude Include="src\Input\XInput.h" />
+    <ClInclude Include="src\MyMath\MyMath.h" />
+    <ClInclude Include="src\MyMemory\MyMemory.h" />
+    <ClInclude Include="src\MyRandom\MyRandom.h" />
+    <ClInclude Include="src\MyTimer\MyTimer.h" />
+    <ClInclude Include="src\Scene\ClearScene\ClearScene.h" />
+    <ClInclude Include="src\Scene\GameOverScene\GameOverScene.h" />
+    <ClInclude Include="src\Scene\PlayScene\PlayScene.h" />
+    <ClInclude Include="src\Scene\Scene.h" />
+    <ClInclude Include="src\Scene\SceneID.h" />
+    <ClInclude Include="src\Scene\TitleScene\TitleScene.h" />
+    <ClInclude Include="src\Screen\Screen.h" />
+    <ClInclude Include="src\SE\SE.h" />
+    <ClInclude Include="src\SE\SEID.h" />
+    <ClInclude Include="src\Singleton\Singleton.h" />
+    <ClInclude Include="src\UI\Button\Button.h" />
+    <ClInclude Include="src\UI\ProgressBar\ProgressBar.h" />
+    <ClInclude Include="src\UI\UI.h" />
+    <ClInclude Include="src\Vector2\Vector2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\GameObjects\EnemyBullet\Updater\EnemyBulletUpdater.cu" />
+    <CudaCompile Include="src\GameObjects\EnemyBullet\Updater\EnemyBulletUpdaterKernel.cu" />
+    <CudaCompile Include="src\GameObjects\Enemy\CollisionDetection\EnemyCollisionDetection.cu" />
+    <CudaCompile Include="src\GameObjects\Enemy\CollisionDetection\EnemyCollisionDetectionKernel.cu" />
+    <CudaCompile Include="src\GameObjects\Enemy\Updater\EnemyUpdater.cu" />
+    <CudaCompile Include="src\GameObjects\Enemy\Updater\EnemyUpdaterKernel.cu" />
+    <CudaCompile Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Updater\PlayerNormalBulletUpdaterKernel.cu" />
+    <CudaCompile Include="src\GameObjects\PlayerBullets\PlayerNormalBullet\Updater\PlayerNormalBulletUpdater.cu" />
+    <CudaCompile Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Updater\PlayerScatterBulletUpdater.cu" />
+    <CudaCompile Include="src\GameObjects\PlayerBullets\PlayerScatterBullet\Updater\PlayerScatterBulletUpdaterKernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Image\bg.png" />
+    <Image Include="res\Image\boss.png" />
+    <Image Include="res\Image\enemy_bullet_16.png" />
+    <Image Include="res\Image\gameclear.png" />
+    <Image Include="res\Image\gameover.png" />
+    <Image Include="res\Image\player.png" />
+    <Image Include="res\Image\player_normal_bullet.png" />
+    <Image Include="res\Image\player_scatter_bullet.png" />
+    <Image Include="res\Image\title_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\BGM\battle1_bgm.mp3" />
+    <Media Include="res\BGM\battle2_bgm.mp3" />
+    <Media Include="res\BGM\battle3_bgm.mp3" />
+    <Media Include="res\BGM\boss_bgm.mp3" />
+    <Media Include="res\BGM\clear_bgm.mp3" />
+    <Media Include="res\BGM\gameover_bgm.mp3" />
+    <Media Include="res\BGM\title_bgm.mp3" />
+    <Media Include="res\SE\boss_dead.mp3" />
+    <Media Include="res\SE\clear.mp3" />
+    <Media Include="res\SE\damaged.mp3" />
+    <Media Include="res\SE\enemy_dead.mp3" />
+    <Media Include="res\SE\gameover.mp3" />
+    <Media Include="res\SE\normal_bullet_fire.mp3" />
+    <Media Include="res\SE\scatter_bullet_fire.mp3" />
+    <Media Include="res\SE\start.mp3" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.2.targets" />
+  </ImportGroup>
+</Project>

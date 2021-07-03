@@ -1,0 +1,14 @@
+#ifndef SCENEID_H_
+#define SCENEID_H_
+
+// ÉVÅ[ÉìID
+enum class SceneID
+{
+	Title,
+	Play,
+	Clear,
+	GameOver,
+	SceneNum
+};
+
+#endif
