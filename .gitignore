@@ -1,0 +1,13 @@
+Debug/
+Release/
+res/
+.vs/
+.sass-cache/
+.DS_Store
+Thumbs.db
+Log.txt
+# Gitの管理下から外す拡張子
+*.exe
+*.suo
+*.cso
+*.css.map
